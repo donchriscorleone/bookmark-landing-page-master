@@ -355,7 +355,7 @@ button[data-type=tab-button].active-tab .tab-label::before {
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
   padding: 1.5em;
   border-radius: 10px;
-  background-image: url(./images/bg-dots.svg);
+  background-image: url("./images/bg-dots.svg");
   background-repeat: repeat-x;
   background-position: 0 70%;
 }
