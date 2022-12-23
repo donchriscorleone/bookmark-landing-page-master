@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://your-solution-url.com)
-- Live Site URL: [https://donchriscorleone.github.io/bookmark-landing-page-master/](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/bookmark-landing-page-RBJ6vd9lp9)
+- Live Site URL: [Github Pages](https://donchriscorleone.github.io/bookmark-landing-page-master/)
 
 ## My Process
 
