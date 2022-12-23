@@ -49,13 +49,15 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
         align-items: center;
+        --max-width: 60em;
     }
 
     .hero-illustration {
         grid-column: 2 / 3;
 
         img {
-            width: 350px;
+            margin-inline: initial;
+            margin-left: auto;
         }
     }
 

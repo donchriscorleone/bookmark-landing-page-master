@@ -719,13 +719,15 @@ footer .list-social-media li a:hover, footer .list-social-media li a:focus-withi
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     align-items: center;
+    --max-width: 60em;
   }
 
   .hero-illustration {
     grid-column: 2/3;
   }
   .hero-illustration img {
-    width: 350px;
+    margin-inline: initial;
+    margin-left: auto;
   }
 
   .hero-content {
