@@ -1,0 +1,55 @@
+@import './../variables';
+
+.form-field {
+    padding: 2px;
+    border-radius: 5px;
+    position: relative;
+
+    .icon {
+        transform: scale(0);
+        width: 1em;
+        height: 1em;
+    }
+
+    &.form-field-error {
+        background-color: $soft-red;
+
+        .icon {
+            transform: scale(1);
+        }
+
+        .form-field-error-message {
+            transform: scale(1);
+        }
+    }
+
+    .form-field-error-message {
+        font-size: .45em;
+        display: block;
+        margin-top: 2px;
+        color: #fff;
+        font-style: italic;
+        position: absolute;
+        transform: scale(0);
+    }
+}
+
+
+label[for=email] {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    .icon {
+        position: absolute;
+        right: .75em;
+    }
+}
+
+input[type=email] {
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: .4em .75em;
+    outline: none;
+    width: 100%;
+}

@@ -1,0 +1,22 @@
+@import './variables';
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font: inherit;
+    font-family: $ff-rubik, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    line-height: 1.5;
+}
+
+ul, ol {
+    list-style: none;
+}

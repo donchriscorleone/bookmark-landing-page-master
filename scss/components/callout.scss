@@ -1,0 +1,67 @@
+@import './../variables';
+
+.callout-wrapper {
+    padding: 2rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    --max-width: 25em;
+    text-align: center;
+}
+
+.callout-heading {
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.callout-sub-heading {
+    font-size: 2rem;
+    max-width: 20ch;
+    margin-inline: auto;
+    color: #fff;
+}
+
+.callout-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    text-align: left;
+
+
+    .form-field {
+        flex-grow: 1;
+
+        label {
+            width: 100%;
+        }
+
+        .form-field-error-message {
+            color: #fff;
+        }
+    }
+
+    button[type=submit] {
+        padding: .4em .75em;
+        border-radius: 5px;
+        border: 1px solid $soft-red;
+        color: #fff;
+        background-color: $soft-red;
+        transition: all .35s;
+        cursor: pointer;
+
+        &:hover, &:focus-within {
+            color: $soft-red;
+            background-color: #fff;
+        }
+    }
+}
+
+@media screen and (min-width: 50em) {
+    .callout-form {
+        flex-direction: row;
+        align-items: center;
+        gap: 1.2rem;
+    }
+}

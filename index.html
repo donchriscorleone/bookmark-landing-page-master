@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/index.css">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <a href="#" data-type="home" aria-label="Bookmark Logo">
+        <!-- Insert Bookmark logo -->
+        <svg class="icon icon-bookmark">
+          <use xlink:href="/assets/sprites/icon-bookmark.svg#logo-bookmark"></use>
+        </svg>
+      </a>
+
+      <nav class="primary-nav">
+        <ul class="list list-pages">
+          <li>
+            <a class="uppercase" href="#" data-type="link">Features</a>
+          </li>
+          <li>
+            <a class="uppercase" href="#" data-type="link">Pricing</a>
+          </li>
+          <li>
+            <a class="uppercase" href="#" data-type="link">Contact</a>
+          </li>
+          <li>
+            <a class="uppercase" href="#" data-type="button">Login</a>
+          </li>
+        </ul>
+        <ul class="list list-social-media">
+          <li>
+            <a href="#" data-type="social" aria-label="Facebook">
+              <!-- Insert svgs -->
+              <svg class="icon icon-social-media">
+                <use xlink:href="/assets/sprites/icon-social-media.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-type="social" aria-label="twitter">
+              <!-- Insert svgs -->
+              <svg class="icon icon-social-media">
+                <use xlink:href="/assets/sprites/icon-social-media.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-nav">
+        <svg class="icon icon-utilities icon-menu">
+          <use xlink:href="/assets/sprites/icon-utilities.svg#icon-hamburger"></use>
+        </svg>
+        <svg class="icon icon-utilities icon-close">
+          <use xlink:href="/assets/sprites/icon-utilities.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section | container">
+      <div class="hero-content">
+        <h1 class="hero-title | color-very-dark-blue">A Simple Bookmark Manager</h1>
+        <p class="hero-desc | color-grayish-blue">A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <div class="hero-actions">
+          <a href="#" data-type="button" data-color="primary">Get it on Chrome</a>
+          <a href="#" data-type="button" data-color="neutral">Get it on Firefox</a>
+        </div>
+      </div>
+
+      <div class="hero-illustration">
+        <img src="./images/illustration-hero.svg" alt="Illustration">
+      </div>
+    </section>
+
+    <section class="feature-section">
+      <div class="feature-content">
+        <h2 class="feature-title | color-very-dark-blue">Features</h2>
+        <p class="feature-desc | color-grayish-blue"> Our aim is to make it quick and easy for you to access your favourite websites. 
+          Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+      </div>
+
+      <div class="feature-tabs">
+        <div class="tabs-container">
+          <div class="tabs-label">
+            <button class="active-tab" aria-label="Simple Bookmarking" data-type="tab-button">
+              <span class="tab-label">Simple Bookmarking</span>
+            </button>
+            <button class="" aria-label="Speedy Searching" data-type="tab-button">
+              <span class="tab-label">Speedy Searching</span>
+            </button>
+            <button class="" aria-label="Easy Sharing" data-type="tab-button">
+              <span class="tab-label">Easy Sharing</span>
+            </button>
+          </div>
+          <div class="tabs-content">
+            <div class="tabs-content-wrapper active-tab" data-tab-index="1">
+              <div class="features-logo">
+                <svg class="icon icon-features">
+                  <use xlink:href="/assets/sprites/icon-features.svg#illustration-features-tab-1"></use>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <span class="feature-title | color-very-dark-blue">Bookmark in one click</span>
+                <span class="feature-desc | color-grayish-blue">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                  gives you complete control over how you manage your favourite sites.
+                </span>
+               <a href="#" class="feature-link" data-type="button" data-color="primary">More info</a>
+              </div>
+            </div>
+      
+            <div class="tabs-content-wrapper" data-tab-index="1">
+              <div class="features-logo">
+                <svg class="icon icon-features">
+                  <use xlink:href="/assets/sprites/icon-features.svg#illustration-features-tab-2"></use>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <span class="feature-title | color-very-dark-blue">Intelligent Search</span>
+                <span class="feature-desc | color-grayish-blue">Our powerful search feature will help you find saved sites in no time at all. 
+                  No need to trawl through all of your bookmarks.
+                </span>
+               <a href="#" class="feature-link" data-type="button" data-color="primary">More info</a>
+              </div>
+            </div>
+      
+            <div class="tabs-content-wrapper" data-tab-index="1">
+              <div class="features-logo">
+                <svg class="icon icon-features">
+                  <use xlink:href="/assets/sprites/icon-features.svg#illustration-features-tab-3"></use>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <span class="feature-title | color-very-dark-blue">Share your bookmarks</span>
+                <span class="feature-desc | color-grayish-blue">Easily share your bookmarks and collections with others. Create a shareable 
+                  link that you can send at the click of a button.
+                </span>
+               <a href="#" class="feature-link" data-type="button" data-color="primary">More info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="extension-section">
+      <div class="extension-heading-content">
+        <h2 class="extension-heading-title | color-very-dark-blue">Download the extension</h2>
+        <p class="extension-heading-desc | color-grayish-blue">
+          We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+          got a favourite you’d like us to prioritize.
+        </p>
+      </div>
+
+      <div class="extension-cards">
+        <div class="extension-card">
+          <div class="extension-wrapper">
+            <div class="extension-content">
+              <svg class="icon icon-browsers">
+                <use xlink:href="/assets/sprites/icon-browsers.svg#logo-firefox"></use>
+              </svg>
+              <span class="extension-title | fw-500 color-very-dark-blue">Add to Firefox</span>
+              <span class="extension-desc | color-grayish-blue">Minimum version 55</span>
+            </div>
+            <div class="extension-action">
+              <button class="extension-btn">Add & Install Extension</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="extension-card">
+          <div class="extension-wrapper">
+            <div class="extension-content">
+              <svg class="icon icon-browsers">
+                <use xlink:href="/assets/sprites/icon-browsers.svg#logo-opera"></use>
+              </svg>
+              <span class="extension-title | fw-500 color-very-dark-blue">Add to Opera</span>
+              <span class="extension-desc | color-grayish-blue">Minimum version 46</span>
+            </div>
+            <div class="extension-action">
+              <button class="extension-btn">Add & Install Extension</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="extension-card">
+          <div class="extension-wrapper">
+            <div class="extension-content">
+              <svg class="icon icon-browsers">
+                <use xlink:href="/assets/sprites/icon-browsers.svg#logo-chrome"></use>
+              </svg>
+              <span class="extension-title | fw-500 color-very-dark-blue">Add to Chrome</span>
+              <span class="extension-desc | color-grayish-blue">Minimum version 62</span>
+            </div>
+            <div class="extension-action">
+              <button class="extension-btn">Add & Install Extension</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="faq-content">
+        <h2 class="faq-title | color-very-dark-blue">Frequently Asked Questions</h2>
+        <p class="faq-desc | color-grayish-blue">
+          Here are some of our FAQs. If you have any other questions you’d like 
+          answered please feel free to email us.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <div class="dropdown-container">
+          <button data-type="dropdown" aria-label="What is Bookmark?">
+            <span class="dropdown-text | color-very-dark-blue">What is Bookmark?</span>
+            <svg class="icon icon-utilities">
+              <use xlink:href="/assets/sprites/icon-utilities.svg#icon-arrow"></use>
+            </svg>
+          </button>
+      
+          <div class="dropdown-content">
+            <p class="| color-grayish-blue">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+            </p>
+          </div>
+        </div>
+      
+        <div class="dropdown-container">
+          <button data-type="dropdown" aria-label="How can I request a new browser?">
+            <span class="dropdown-text | color-very-dark-blue">How can I request a new browser?</span>
+            <svg class="icon icon-utilities">
+              <use xlink:href="/assets/sprites/icon-utilities.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        
+          <div class="dropdown-content">
+            <p class="content | color-grayish-blue">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </p>
+          </div>
+        </div>
+      
+        <div class="dropdown-container">
+          <button data-type="dropdown" aria-label="Is there a mobile app?">
+            <span class="dropdown-text | color-very-dark-blue">Is there a mobile app?</span>
+            <svg class="icon icon-utilities">
+              <use xlink:href="/assets/sprites/icon-utilities.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        
+          <div class="dropdown-content">
+            <p class="content | color-grayish-blue">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+              sollicitudin ex et ultricies bibendum.
+            </p>
+          </div>
+        </div>
+        
+        <div class="dropdown-container">
+          <button data-type="dropdown" aria-label="What about other Chronium browsers?">
+            <span class="dropdown-text | color-very-dark-blue">What about other Chronium browsers?</span>
+            <svg class="icon icon-utilities">
+              <use xlink:href="/assets/sprites/icon-utilities.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        
+          <div class="dropdown-content">
+            <p class="content | color-grayish-blue">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+              vitae neque eget nisl gravida pellentesque non ut velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-wrapper">
+      <div class="callout | bg-soft-blue">
+        <div class="callout-wrapper | container">
+          <span class="callout-heading | uppercase">35,000+ already joined</span>
+          <span class="callout-sub-heading">Stay up-to-date with what we're doing</span>
+    
+          <form action="POST" novalidate class="callout-form" id="callout-form">
+            <div class="form-field">
+              <label for="email" aria-label="Email">
+                <input type="email" placeholder="Enter your email address" name="email" id="email">
+                <svg class="icon icon-utilities">
+                  <use xlink:href="/assets/sprites/icon-utilities.svg#icon-error"></use>
+                </svg>
+              </label>
+              <span class="form-field-error-message">Whoops, make sure it's an email</span>
+            </div>
+            <button type="submit" class="btn-callout">Contact Us</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-nav-wrapper | bg-very-dark-blue">
+        <nav class="footer-nav">
+          <a class="footer-home" href="#" data-type="home" data-color="white" aria-label="Bookmark Logo">
+            <!-- Insert Bookmark logo -->
+            <svg class="icon icon-bookmark">
+              <use xlink:href="/assets/sprites/icon-bookmark.svg#logo-bookmark"></use>
+            </svg>
+          </a>
+          <ul class="list list-pages">
+            <li>
+              <a class="uppercase" href="#" data-type="link">Features</a>
+            </li>
+            <li>
+              <a class="uppercase" href="#" data-type="link">Pricing</a>
+            </li>
+            <li>
+              <a class="uppercase" href="#" data-type="link">Contact</a>
+            </li>
+          </ul>
+          <ul class="list list-social-media">
+            <li>
+              <a href="#" data-type="social" aria-label="Facebook">
+                <!-- Insert svgs -->
+                <svg class="icon icon-social-media">
+                  <use xlink:href="/assets/sprites/icon-social-media.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-type="social" aria-label="twitter">
+                <!-- Insert svgs -->
+                <svg class="icon icon-social-media">
+                  <use xlink:href="/assets/sprites/icon-social-media.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="attribution">
+      <a href="https://www.instagram.com/devchristopherii" target="_blank" class="color-grayish-blue">&copy; Coded by Christopher II</a>
+      <a href="https://www.frontendmentor.io" target="_blank" class="color-grayish-blue">Challenged from Frontend Mentor</a>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+@import './../variables';
+
+.icon {
+    width: var(--width, 20em);
+    height: var(--height, 20em);
+}
+

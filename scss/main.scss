@@ -1,0 +1,199 @@
+@import './variables';
+
+// Hero
+
+.hero-section {
+    display: grid;
+    row-gap: 2rem;
+}
+
+.hero-illustration {
+    grid-row: 1 / 2;
+    position: relative;
+    
+    img {
+        object-fit: contain;
+        max-width: 350px;
+        margin-inline: auto;
+    }
+}
+
+.hero-content {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .hero-title {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .hero-desc {
+        font-size: .95rem;
+        line-height: 2;
+    }
+
+    .hero-actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        font-size: .85rem;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    .hero-section {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+    }
+
+    .hero-illustration {
+        grid-column: 2 / 3;
+
+        img {
+            width: 350px;
+        }
+    }
+
+    .hero-content {
+        text-align: left;
+        gap: 1rem;
+    
+        .hero-title {
+            line-height: 1;
+        }
+    
+        .hero-desc {
+            font-size: .95rem;
+        }
+    
+        .hero-actions {
+            justify-content: flex-start;
+            gap: 1.5rem;
+        }
+    }
+    
+}
+
+// Features
+
+.feature-section {
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.feature-content {
+    text-align: center;
+
+    .feature-title {
+        font-size: 1.75rem;
+        font-weight: 500;
+        margin-bottom: .3em;
+    }
+
+    .feature-desc {
+        line-height: 2;
+        margin-inline: auto;
+        max-width: 50ch;
+    }
+}
+
+.feature-tabs {
+    font-size: 1.15rem;
+}
+
+// Extensions
+
+.extension-section {
+    display: grid;
+    row-gap: 2rem;
+}
+
+.extension-heading-content {
+    text-align: center;
+
+    .extension-heading-title {
+        font-size: 1.75rem;
+        margin-bottom: .55em;
+        font-weight: 500;
+    }
+
+    .extension-heading-desc {
+        max-width: 35ch;
+        margin-inline: auto;
+        font-size: .85rem;
+        line-height: 1.5;
+    }
+}
+
+.extension-cards {
+    display: grid;
+    align-items: center;
+    row-gap: 2rem;
+    max-width: 60em;
+    margin-inline: auto;
+}
+
+@media screen and (min-width: 50em) {
+    .extension-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+
+        .extension-card:nth-of-type(2) {
+            transform: translateY(30px);
+        }
+
+
+        .extension-card:nth-of-type(3) {
+            transform: translateY(60px);
+        }
+    }
+}
+
+.faq-section {
+    max-width: 50em;
+    margin-inline: auto;
+    margin-top: 10rem;
+}
+
+.faq-content {
+    text-align: center;
+
+    .faq-title {
+        font-size: 1.75rem;
+        font-weight: 500;
+        margin-bottom: .5em;
+    }
+
+    .faq-desc {
+        font-size: .85rem;
+        max-width: 40ch;
+        margin-inline: auto;
+        line-height: 2;
+    }
+}
+
+.faq-container {
+    font-size: .95rem;
+}
+
+main {
+    padding: 2rem 3rem;
+
+    > section {
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    main {
+        padding: 2rem 7rem;
+    
+    }
+}
+

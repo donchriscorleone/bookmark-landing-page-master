@@ -1,0 +1,52 @@
+@import './variables';
+
+.bg-soft-blue {
+    background-color: $soft-blue;
+}
+.bg-soft-red {
+    background-color: $soft-red;
+}
+.bg-grayish-blue {
+    background-color: $grayish-blue;
+}
+.bg-very-dark-blue {
+    background-color: $very-dark-blue;
+}
+
+.color-soft-blue {
+    color: $soft-blue;
+}
+.color-soft-red {
+    color: $soft-red;
+}
+.color-grayish-blue {
+    color: $grayish-blue;
+}
+.color-very-dark-blue {
+    color: $very-dark-blue;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    margin-inline: auto;
+    max-width: var(--max-width, 100vw);
+}

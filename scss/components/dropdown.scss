@@ -1,0 +1,51 @@
+@import './../variables';
+
+.dropdown-container {
+    padding: .85em .3em;
+    border-bottom: .5px solid $grayish-blue;
+
+    &:not(.dropdown-expanded) {
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+        }
+    }
+
+    &.dropdown-expanded {
+        .dropdown-content {
+            max-height: 100vh;
+            margin-top: 1.5em;
+        }
+
+        .icon {
+            transform: rotate(180deg);
+            --color-icon-arrow: $soft-red; // TODO: investigate why arrow is not changing
+        }
+    }
+}
+
+button[data-type=dropdown] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .dropdown-text {
+        font-size: .9em;
+    }
+
+    .icon {
+        width: .85em;
+        height: .85em;
+        transition: transform .35s;
+    }
+}
+
+.dropdown-content {
+    transition: max-height .35s;
+    line-height: 2;
+    font-size: .95em;
+}
